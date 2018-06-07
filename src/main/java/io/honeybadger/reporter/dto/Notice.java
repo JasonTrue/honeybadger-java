@@ -29,6 +29,7 @@ public class Notice implements Serializable {
         this.details.addDefaultDetails();
     }
 
+    @deprecated("Will be removed in 2.0.0")
     public Notice() {
         ConfigContext config = ConfigContext.threadLocal.get();
         if (config == null) throw new NullPointerException(
